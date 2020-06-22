@@ -1,0 +1,7 @@
+indexes:
+
+- kind: timer
+  ancestor: yes
+  properties:
+  - name: timestamp
+    direction: desc
