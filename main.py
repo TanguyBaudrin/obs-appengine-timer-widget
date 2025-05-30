@@ -50,7 +50,7 @@ def fetch_times(email, limit):
 
 
 @app.route('/timer', methods=["POST"])
-def update_timer():
+def updateTimer():
     # Verify Firebase auth.
     id_token = request.cookies.get("token")
     error_message = None
@@ -72,7 +72,7 @@ def update_timer():
     return "<html><head></head><body>Success<br/><a href='/'>Retour</a></body></html>"
 
 @app.route('/timer', methods=["GET"])
-def get_timer():
+def getTimer():
     # Verify Firebase auth.
     id_token = request.cookies.get("token")
     error_message = None
